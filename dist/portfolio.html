@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Import Google Icon Font -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Import materialize.css -->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="css/materialize.css"
+      media="screen,projection"
+    />
+    <!-- Import nouislider.css -->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="extras/noUiSlider/nouislider.css"
+    />
+
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+
+    <!-- Import Font Awesome! -->
+    <script
+      src="https://kit.fontawesome.com/dc03b3b399.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Optimizacija za mobilne uredjaje -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+  </head>
+
+  <body id="top" class=" scrollspy">
+    <!-- Header -->
+    <header class="main-header">
+      <nav class="nav-extended transparent z-depth-0">
+        <div class="nav-wrapper">
+          <a href="#" data-target="mobile-nav" class="sidenav-trigger">
+            <i class="material-icons">menu</i>
+          </a>
+          <a href="index.html" class="brand-logo hide-on-med-and-down">
+            <h5>Tanja Vladisavljević</h5>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li class="active">
+              <a href="index.html#about-me">About Me</a>
+            </li>
+            <li>
+              <a class="dropdown-trigger" href="#!" data-target="portfolio"
+                >Portfolio<i class="material-icons right">arrow_drop_down</i></a
+              >
+            </li>
+            <!-- Dropdown Struktura za Portfolio -->
+            <ul id="portfolio" class="dropdown-content">
+              <li>
+                <a class="klik" data-tab="graphic-design" href="#graphic-design"
+                  >Graphic Design</a
+                >
+              </li>
+              <li>
+                <a class="klik" data-tab="ui-ux-design" href="#ui-ux-design"
+                  >UI/UX Design</a
+                >
+              </li>
+              <li>
+                <a class="klik" data-tab="web-design" href="#web-design"
+                  >Web Design</a
+                >
+              </li>
+            </ul>
+            <li>
+              <!--  Hire Me Modal Trigger -->
+              <a
+                class="waves-effect waves-light btn blue modal-trigger"
+                href="#hire-me"
+                >Hire Me</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Sidenav za mobilne uredjaje -->
+      <ul id="mobile-nav" class="sidenav">
+        <li>
+          <a class="subheader center-align">Tanja Vladisavljević</a>
+        </li>
+        <li><div class="divider"></div></li>
+        <li class="left-align">
+          <a href="index.html"><i class="material-icons">home</i>Home</a>
+        </li>
+        <li class="left-align">
+          <a href="index.html#about-me"
+            ><i class="material-icons">camera_front</i>About Me</a
+          >
+        </li>
+        <li class="left-align">
+          <!-- Collapsible komponenta za nav meni -->
+          <ul class="collapsible collapsible-accordion ">
+            <li>
+              <a class="collapsible-header"
+                ><i class="material-icons">developer_board</i>Portfolio</a
+              >
+              <div class="collapsible-body">
+                <ul>
+                  <li>
+                    <a
+                      class="klik"
+                      data-tab="graphic-design"
+                      href="#graphic-design"
+                      >Graphic Design</a
+                    >
+                  </li>
+                  <li>
+                    <a class="klik" data-tab="ui-ux-design" href="#ui-ux-design"
+                      >UI/UX Design</a
+                    >
+                  </li>
+                  <li>
+                    <a class="klik" data-tab="web-design" href="#web-design"
+                      >Web Design</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <!-- Hire Me Modal Trigger -->
+        <li>
+          <a
+            class="waves-effect waves-light hire-me btn blue modal-trigger"
+            href="#hire-me"
+            >Hire Me</a
+          >
+        </li>
+      </ul>
+      <!-- Header naslov -->
+      <h1 class="center">I do <span id="design">Graphic</span> Design</h1>
+    </header>
+
+    <!-- Tabs swipe tabovi -->
+    <ul id="tabs-swipe" class="tabs">
+      <li class="tab col s3">
+        <a href="#graphic-design">Graphic Design</a>
+      </li>
+      <li class="tab col s3">
+        <a href="#ui-ux-design">UI/UX Design</a>
+      </li>
+      <li class="tab col s3">
+        <a href="#web-design">Web Design</a>
+      </li>
+    </ul>
+    <!-- Tabs swipe tab graphic design -->
+    <div id="graphic-design" class="col s12">
+      <section class="section section-gd">
+        <div class="container">
+          <div class="row row-1">
+            <div class="col m6 hide-on-small-only">
+              <div class="img-content">
+                <h3>Neuro Coffe</h3>
+                Interesting, clean and modern design for a Coffee product.
+              </div>
+            </div>
+            <div class="col m6">
+              <div class="card">
+                <div class="card-image">
+                  <img
+                    src="img/portfolio/graphic-design/coffe-logo.jpg"
+                    alt="coffe-logo"
+                  />
+                  <span class="card-title hide-on-med-and-down"
+                    >Neuro Coffe</span
+                  >
+                  <a
+                    href="#gd1"
+                    class="btn-floating halfway-fab waves-effect waves-light deep-purple modal-trigger"
+                  >
+                    <i class="material-icons">add</i>
+                  </a>
+                </div>
+                <div class="card-content star-graphic">
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star_half</i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row row-2">
+            <div class="col m6">
+              <div class="card">
+                <div class="card-image">
+                  <img
+                    src="img/portfolio/graphic-design/wedding-1crop.jpg"
+                    alt="wedding"
+                  />
+                  <span class="card-title hide-on-med-and-down"
+                    >Wedding Invitations</span
+                  >
+                  <a
+                    href="#gd2"
+                    class="btn-floating halfway-fab waves-effect waves-light deep-purple modal-trigger"
+                  >
+                    <i class="material-icons">add</i>
+                  </a>
+                </div>
+                <div class="card-content star-graphic">
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star</i>
+                </div>
+              </div>
+            </div>
+            <div class="col m6 hide-on-small-only">
+              <div class="img-content">
+                <h3>Wedding Invitations</h3>
+                Leslie&Brian's special day. Modern, fashion-forward, geometric,
+                edgy, or clean and modern design.
+              </div>
+            </div>
+          </div>
+
+          <div class="row row-3">
+            <div class="col m6 hide-on-small-only">
+              <div class="img-content">
+                <h3>Corporate Event - Clam Bake</h3>
+                My clean corporate designs have been featured in Forbes, Brides,
+                and Hamptons Magazine. Whether you're a start-up or a Fortune
+                500 corporation, wI'll help you engage your marketplace with a
+                forward-thinking visual identity.
+              </div>
+            </div>
+            <div class="col m6">
+              <div class="card">
+                <div class="card-image">
+                  <img
+                    src="img/portfolio/graphic-design/ce-1CROP.jpg"
+                    alt="coffe-logo"
+                  />
+                  <span class="card-title hide-on-med-and-down"
+                    >Corporate Event - Clam Bake</span
+                  >
+                  <a
+                    href="#gd3"
+                    class="btn-floating halfway-fab waves-effect waves-light deep-purple modal-trigger"
+                  >
+                    <i class="material-icons">add</i>
+                  </a>
+                </div>
+                <div class="card-content star-graphic">
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star</i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div id="ui-ux-design" class="col s12">
+      <section class="section section-ui">
+        <div class="container">
+          <div class="row row-1">
+            <div class="col m6 hide-on-small-only">
+              <div class="img-content">
+                <h3>Dropbox Mobile Redesign</h3>
+                During the second half of 2017, I led the redesign of Dropbox’s
+                mobile apps to empower rapid work for collaborators on the go.
+                Here are just a few of the changes we shipped.
+              </div>
+            </div>
+            <div class="col m6">
+              <div class="card">
+                <div class="card-image">
+                  <img
+                    src="img/portfolio/ui-ux-design/dropbox-1crop.jpg"
+                    alt=""
+                  />
+                  <span class="card-title hide-on-med-and-down black-text"
+                    >Dropbox Mobile Redesign</span
+                  >
+                  <a
+                    href="#ui1"
+                    class="btn-floating halfway-fab waves-effect waves-light purple modal-trigger"
+                  >
+                    <i class="material-icons">add</i>
+                  </a>
+                </div>
+                <div class="card-content star-ui">
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star</i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row row-2">
+            <div class="col m6">
+              <div class="card">
+                <div class="card-image">
+                  <img
+                    src="img/portfolio/ui-ux-design/champs-2crop.jpg"
+                    alt=""
+                  />
+                  <span class="card-title hide-on-med-and-down"
+                    >Champs : Battlegrounds</span
+                  >
+                  <a
+                    href="#ui2"
+                    class="btn-floating halfway-fab waves-effect waves-light purple modal-trigger"
+                  >
+                    <i class="material-icons">add</i>
+                  </a>
+                </div>
+                <div class="card-content star-ui">
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star</i>
+                </div>
+              </div>
+            </div>
+            <div class="col m6 hide-on-small-only">
+              <div class="img-content">
+                <h3>Champs : Battlegrounds</h3>
+                Champs : Battlegrounds is a Multiplayer Online Squad Strategy
+                mobile game. It’s available on both tablet and smart phones (iOS
+                + Android). I had lots of fun designing the UI for this game. It
+                was a great opportunity to show that games don’t have to have
+                overly convoluted user interfaces.
+              </div>
+            </div>
+          </div>
+
+          <div class="row row-3">
+            <div class="col m6 hide-on-small-only">
+              <div class="img-content">
+                <h3>Guidebook</h3>
+                The Guidebook app provides a library of guides for events,
+                organizations, and places. Each guide is created by an event
+                organizer or host and is composed of schedules, tools, and
+                useful information. In the past Guidebook focused on simply
+                providing these mobile guides for events like PAX or Pycon.
+                However over the past few years, the types of guides have
+                expanded from events to places, weddings, community centers, and
+                more.
+              </div>
+            </div>
+            <div class="col m6">
+              <div class="card">
+                <div class="card-image">
+                  <img
+                    src="img/portfolio/ui-ux-design/guidebook-1crop.jpg"
+                    alt=""
+                  />
+                  <span class="card-title hide-on-med-and-down black-text"
+                    >Guidebook</span
+                  >
+                  <a
+                    href="#ui3"
+                    class="btn-floating halfway-fab waves-effect waves-light purple modal-trigger"
+                  >
+                    <i class="material-icons">add</i>
+                  </a>
+                </div>
+                <div class="card-content star-ui">
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star</i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div id="web-design" class="col s12">
+      <section class="section section-web">
+        <div class="container">
+          <div class="row row-1">
+            <div class="col m6 hide-on-small-only">
+              <div class="img-content">
+                <h3>Vita Travel</h3>
+                Modern and clean design for a Travel Agency.
+              </div>
+            </div>
+            <div class="col m6">
+              <div class="card">
+                <div class="card-image">
+                  <img src="img/portfolio/web-design/travel.png" alt="" />
+                  <span class="card-title hide-on-med-and-down"
+                    >Vita Travel</span
+                  >
+                  <a
+                    href="#web1"
+                    class="btn-floating halfway-fab waves-effect waves-light blue modal-trigger"
+                  >
+                    <i class="material-icons">add</i>
+                  </a>
+                </div>
+                <div class="card-content star-web">
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star</i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row row-2">
+            <div class="col m6">
+              <div class="card">
+                <div class="card-image">
+                  <img
+                    src="img/portfolio/web-design/adcraftandkitchen-1crop.jpg"
+                    alt=""
+                  />
+                  <span class="card-title hide-on-med-and-down"
+                    >Arts District Craft & Kitchen</span
+                  >
+                  <a
+                    href="#web2"
+                    class="btn-floating halfway-fab waves-effect waves-light blue modal-trigger"
+                  >
+                    <i class="material-icons">add</i>
+                  </a>
+                </div>
+                <div class="card-content star-web">
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star</i>
+                </div>
+              </div>
+            </div>
+            <div class="col m6 hide-on-small-only">
+              <div class="img-content">
+                <h3>Arts District Craft & Kitchen</h3>
+                I really enjoyed creating this beatiful web presentation. Arts
+                District Craft and Kitchen is a culmination of giving our best
+                to the community through our food, service, and atmosphere.
+                Tucked inside one of the premier breweries in Nevada, this
+                collaboration project allows us another opportunity to create a
+                memorable setting for you to catch up with friends and make new
+                ones over tasty bites and a refreshing beer.
+              </div>
+            </div>
+          </div>
+
+          <div class="row row-3">
+            <div class="col m6 hide-on-small-only">
+              <div class="img-content">
+                <h3>QuadAngles - Creative Digital Studio</h3>
+                Quad Angles make products with strategy, technology, and
+                creativity to become your brand visible and active. This project
+                is a result of a beautiful collaboration.
+              </div>
+            </div>
+            <div class="col m6">
+              <div class="card">
+                <div class="card-image">
+                  <img
+                    src="img/portfolio/web-design/quadangles-1crop.jpg"
+                    alt=""
+                  />
+                  <span class="card-title hide-on-med-and-down"
+                    >QuadAngles - Creative Digital Studio</span
+                  >
+                  <a
+                    href="#web3"
+                    class="btn-floating halfway-fab waves-effect waves-light blue modal-trigger"
+                  >
+                    <i class="material-icons">add</i>
+                  </a>
+                </div>
+                <div class="card-content star-web">
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star</i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Hire Me Modal -->
+    <div id="hire-me" class="modal">
+      <div class="modal-content">
+        <h3 class="center-align">
+          Hire
+          <button
+            onclick="window.location.href = 'index.html#about-me'"
+            ;
+            class="btn-large tooltipped blue"
+            data-position="right"
+            data-tooltip="About Me"
+          >
+            <h3 class="flow-text">Me</h3>
+          </button>
+        </h3>
+        <div class="divider"></div>
+        <br />
+        <!-- Forma pocetak -->
+        <form action="#">
+          <h4 class="grey-text flow-text">Your Contact</h4>
+          <br />
+          <!-- Kontakt -->
+          <div class="input-field">
+            <i class="material-icons blue-text prefix">account_circle</i>
+            <input id="name" type="text" class="validate" required />
+            <label for="name">Name*</label>
+            <div class="input-field">
+              <i class="material-icons blue-text prefix">email</i>
+              <input id="email" type="email" class="validate" required />
+              <label for="email">Email*</label>
+            </div>
+          </div>
+          <br />
+          <!-- Detalji -->
+          <h4 class="grey-text flow-text">Project Details</h4>
+          <br />
+          <!-- Pitanje 1 -->
+          <h6 class="flow-text">What can I help you with?</h6>
+          <p>
+            <label>
+              <input type="checkbox" class="filled-in" />
+              <span>Graphic Design</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox" class="filled-in" />
+              <span>UI/UX Design</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox" class="filled-in" />
+              <span>Web Design</span>
+            </label>
+          </p>
+          <br />
+          <!-- Pitanje 2 -->
+          <h6 class="flow-text">
+            Is this a new project or a redesign for an existing site / brand?
+          </h6>
+          <p>
+            <label>
+              <input class="with-gap" name="new" type="radio" />
+              <span>New Project</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input class="with-gap" name="redesign" type="radio" />
+              <span>Redesign</span>
+            </label>
+          </p>
+          <br />
+          <!-- Pitanje 3 -->
+          <h6 class="flow-text">
+            <span class="blue-text"><b>Timeline.</b></span> When do you need
+            this completed by?
+          </h6>
+          <input type="text" class="datepicker" />
+          <!-- Pitanje 4 -->
+          <h6 class="flow-text">
+            <span class="blue-text"><b>Budget.</b></span> How much are you
+            planning to invest in the project? (EUR)
+          </h6>
+          <br /><br />
+          <div id="budget-slider"></div>
+          <br />
+          <!-- Pitanje 5 -->
+          <h6 class="flow-text">
+            Why is the site / redesign / project needed? Who is the audience?
+          </h6>
+          <div class="input-field">
+            <textarea
+              id="textarea1"
+              class="materialize-textarea"
+              data-length="120"
+            ></textarea>
+            <label for="textarea1">Your answer</label>
+          </div>
+          <!-- Pitanje 6 -->
+          <h6 class="flow-text">
+            What are the primary objectives and goals (long term and short term)
+            for the project?
+          </h6>
+          <div class="input-field">
+            <textarea
+              id="textarea2"
+              class="materialize-textarea"
+              data-length="120"
+            ></textarea>
+            <label for="textarea2">Your answer</label>
+          </div>
+          <!-- Pitanje 7 -->
+          <h6 class="flow-text">
+            Please provide any additional details for the project.
+          </h6>
+          <div class="input-field">
+            <textarea
+              id="textarea3"
+              class="materialize-textarea"
+              data-length="120"
+            ></textarea>
+            <label for="textarea3">Your answer</label>
+          </div>
+        </form>
+        <!-- Forma kraj -->
+      </div>
+      <div class="container">
+        <div class="modal-footer">
+          <a
+            href="#!"
+            class="modal-action modal-close waves-effect waves-light waves-blue btn-large "
+            ><span class="flow-text">SUBMIT</span></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Sekcija: Glavni sadrzaj -->
+    <!-- Graphic Design -->
+    <!-- Modal 1: Neuro Coffee -->
+    <div id="gd1" class="modal">
+      <div class="modal-content center">
+        <h4>
+          Neuro Coffe<i
+            class="material-icons black-text right modal-action modal-close"
+            >close</i
+          >
+        </h4>
+        <img
+          src="img/portfolio/graphic-design/coffe-logo.jpg"
+          alt=""
+          class="responsive-img"
+        /><br />
+        <p class="flow-text">
+          Interesting, clean and modern design for a Coffee product.
+        </p>
+        <p>
+          Source:
+          <a href="https://getneurocoffee.com/">getneurocoffee.com</a>
+        </p>
+        <div class="row center">
+          <div class="col s12 l4">
+            <img
+              class="materialboxed responsive-img modal-img"
+              src="img/portfolio/graphic-design/coffe-logo.jpg"
+            />
+          </div>
+          <div class="col s12 l4">
+            <img
+              class="materialboxed responsive-img modal-img"
+              src="img/portfolio/graphic-design/coffe-logo-1.jpeg"
+            />
+          </div>
+          <div class="col s12 l4">
+            <img
+              class="materialboxed responsive-img modal-img"
+              src="img/portfolio/graphic-design/coffe-logo-2.jpeg"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="modal-footer">
+          <p>
+            <i class="material-icons">star</i>
+            <i class="material-icons">star</i>
+            <i class="material-icons">star</i>
+            <i class="material-icons">star</i>
+            <i class="material-icons">star_half</i>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 2: Wedding -->
+    <div id="gd2" class="modal">
+      <div class="modal-content center">
+        <h4>
+          Wedding Invitations<i
+            class="material-icons black-text right modal-action modal-close"
+            >close</i
+          >
+        </h4>
+        <img
+          src="img/portfolio/graphic-design/wedding-1crop.jpg"
+          alt=""
+          class="responsive-img"
+        /><br />
+        <p class="flow-text">
+          Leslie & Brian's special day. Modern, fashion-forward, geometric,
+          edgy, or clean and modern design.
+        </p>
+        <p>
+          Source:
+          <a href="http://www.katiefischerdesign.com/"
+            >katiefischerdesign.com</a
+          >
+        </p>
+        <div class="row center">
+          <div class="col s12 l4">
+            <img
+              class="materialboxed responsive-img modal-img"
+              src="img/portfolio/graphic-design/wedding-1.jpg"
+            />
+          </div>
+          <div class="col s12 l4">
+            <img
+              class="materialboxed responsive-img modal-img"
+              src="img/portfolio/graphic-design/wedding-2.jpg"
+            />
+          </div>
+          <div class="col s12 l4">
+            <img
+              class="materialboxed responsive-img modal-img"
+              src="img/portfolio/graphic-design/wedding-3.jpg"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="modal-footer">
+          <p>
+            <i class="material-icons">star</i>
+            <i class="material-icons">star</i>
+            <i class="material-icons">star</i>
+            <i class="material-icons">star</i>
+            <i class="material-icons">star</i>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 3: Corporate Events -->
+    <div id="gd3" class="modal">
+      <div class="modal-content center">
+        <h4>
+          Corporate Events - Clam Bake<i
+            class="material-icons black-text right modal-action modal-close"
+            >close</i
+          >
+        </h4>
+        <img
+          src="img/portfolio/graphic-design/ce-1CROP.jpg"
+          alt=""
+          class="responsive-img"
+        /><br />
+        <p class="flow-text">
+          My clean corporate designs have been featured in Forbes, Brides, and
+          Hamptons Magazine. Whether you're a start-up or a Fortune 500
+          corporation, wI'll help you engage your marketplace with a
+          forward-thinking visual identity.
+        </p>
+        <p>
+          Source:
+          <a href="http://www.katiefischerdesign.com/"
+            >katiefischerdesign.com</a
+          >
+        </p>
+        <div class="row center">
+          <div class="col s12 l4">
+            <img
+              class="materialboxed responsive-img modal-img"
+              src="img/portfolio/graphic-design/ce-1.jpg"
+            />
+          </div>
+          <div class="col s12 l4">
+            <img
+              class="materialboxed responsive-img modal-img"
+              src="img/portfolio/graphic-design/ce-2.jpg"
+            />
+          </div>
+          <div class="col s12 l4">
+            <img
+              class="materialboxed responsive-img modal-img"
+              src="img/portfolio/graphic-design/ce-3.jpg"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="modal-footer">
+          <p>
+            <i class="material-icons">star</i>
+            <i class="material-icons">star</i>
+            <i class="material-icons">star</i>
+            <i class="material-icons">star</i>
+            <i class="material-icons">star</i>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- UI/UX Design -->
+    <!-- Modal 1: Dropbox Mobile Redesign -->
+    <div id="ui1" class="modal">
+      <div class="modal-content center">
+        <h4>
+          Dropbox Mobile Redesign
+          <i class="material-icons black-text right modal-action modal-close"
+            >close</i
+          >
+        </h4>
+        <img
+          src="img/portfolio/ui-ux-design/dropbox-1crop.jpg"
+          alt=""
+          class="responsive-img"
+        /><br />
+        <p class="flow-text">
+          During the second half of 2017, I led the redesign of Dropbox’s mobile
+          apps to empower rapid work for collaborators on the go. Here are just
+          a few of the changes we shipped.
+        </p>
+        <p>
+          Source:
+          <a href="https://www.thatedchao.com/">thatedchao.com</a>
+        </p>
+        <div class="row center">
+          <div class="col s12 l4">
+            <img
+              class="materialboxed responsive-img modal-img"
+              src="img/portfolio/ui-ux-design/dropbox-1.jpg"
+            />
+          </div>
+          <div class="col s12 l4">
+            <img
+              class="materialboxed responsive-img modal-img"
+              src="img/portfolio/ui-ux-design/dropbox-2.jpg"
+            />
+          </div>
+          <div class="col s12 l4">
+            <img
+              class="materialboxed responsive-img modal-img"
+              src="img/portfolio/ui-ux-design/dropbox-3.jpg"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="modal-footer">
+          <p>
+            <i class="material-icons">star</i>
+            <i class="material-icons">star</i>
+            <i class="material-icons">star</i>
+            <i class="material-icons">star</i>
+            <i class="material-icons">star</i>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 2: Champs : Battlegrounds Game -->
+    <div id="ui2" class="modal">
+      <div class="modal-content center">
+        <h4>
+          Champs : Battlegrounds<i
+            class="material-icons black-text right modal-action modal-close"
+            >close</i
+          >
+        </h4>
+        <img
+          src="img/portfolio/ui-ux-design/champs-2crop.jpg"
+          alt=""
+          class="responsive-img"
+        /><br />
+        <p class="flow-text">
+          Champs : Battlegrounds is a Multiplayer Online Squad Strategy mobile
+          game. It’s available on both tablet and smart phones (iOS + Android).
+          I had lots of fun designing the UI for this game. It was a great
+          opportunity to show that games don’t have to have overly convoluted
+          user interfaces.
+        </p>
+        <p>
+          Source:
+          <a href="https://www.thatedchao.com/">thatedchao.com</a>
+        </p>
+        <div class="row center">
+          <div class="col s12 l4">
+            <img
+              class="materialboxed responsive-img modal-img"
+              src="img/portfolio/ui-ux-design/champs-1.jpg"
+            />
+          </div>
+          <div class="col s12 l4">
+            <img
+              class="materialboxed responsive-img modal-img"
+              src="img/portfolio/ui-ux-design/champs-2.jpg"
+            />
+          </div>
+          <div class="col s12 l4">
+            <img
+              class="materialboxed responsive-img modal-img"
+              src="img/portfolio/ui-ux-design/champs-3.jpg"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="modal-footer">
+          <p>
+            <i class="material-icons">star</i>
+            <i class="material-icons">star</i>
+            <i class="material-icons">star</i>
+            <i class="material-icons">star</i>
+            <i class="material-icons">star</i>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 3: Guidebook -->
+    <div id="ui3" class="modal">
+      <div class="modal-content center">
+        <h4>
+          Guidebook<i
+            class="material-icons black-text right modal-action modal-close"
+            >close</i
+          >
+        </h4>
+        <img
+          src="img/portfolio/ui-ux-design/guidebook-1crop.jpg"
+          alt=""
+          class="responsive-img"
+        /><br />
+        <p class="flow-text">
+          The Guidebook app provides a library of guides for events,
+          organizations, and places. Each guide is created by an event organizer
+          or host and is composed of schedules, tools, and useful information.
+          In the past Guidebook focused on simply providing these mobile guides
+          for events like PAX or Pycon. However over the past few years, the
+          types of guides have expanded from events to places, weddings,
+          community centers, and more.
+        </p>
+        <p>
+          Source:
+          <a href="https://www.thatedchao.com/">thatedchao.com</a>
+        </p>
+        <div class="row center">
+          <div class="col s12 l4">
+            <img
+              class="materialboxed responsive-img modal-img"
+              src="img/portfolio/ui-ux-design/guidebook-1.jpg"
+            />
+          </div>
+          <div class="col s12 l4">
+            <img
+              class="materialboxed responsive-img modal-img"
+              src="img/portfolio/ui-ux-design/guidebook-2.jpg"
+            />
+          </div>
+          <div class="col s12 l4">
+            <img
+              class="materialboxed responsive-img modal-img"
+              src="img/portfolio/ui-ux-design/guidebook-3.jpg"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="modal-footer">
+          <p>
+            <i class="material-icons">star</i>
+            <i class="material-icons">star</i>
+            <i class="material-icons">star</i>
+            <i class="material-icons">star</i>
+            <i class="material-icons">star</i>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Web Design -->
+    <!-- Modal 1: Vita Travel -->
+    <div id="web1" class="modal">
+      <div class="modal-content center">
+        <h4>
+          Vita Travel<i
+            class="material-icons black-text right modal-action modal-close"
+            >close</i
+          >
+        </h4>
+        <img
+          src="img/portfolio/web-design/travel.png"
+          alt=""
+          class="responsive-img"
+        /><br />
+        <p class="flow-text">
+          Modern and clean design for a Travel Agency.
+        </p>
+        <p>
+          Source:
+          <a href="https://www.behance.net/Distlemoto"
+            >www.behance.net/Distlemoto</a
+          >
+        </p>
+        <div class="row center">
+          <div class="col s12 l4">
+            <img
+              class="materialboxed responsive-img modal-img"
+              src="img/portfolio/web-design/travel.png"
+            />
+          </div>
+          <div class="col s12 l4">
+            <img
+              class="materialboxed responsive-img modal-img"
+              src="img/portfolio/web-design/travel-1.png"
+            />
+          </div>
+          <div class="col s12 l4">
+            <img
+              class="materialboxed responsive-img modal-img"
+              src="img/portfolio/web-design/travel-2.png"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="modal-footer">
+          <p>
+            <i class="material-icons">star</i>
+            <i class="material-icons">star</i>
+            <i class="material-icons">star</i>
+            <i class="material-icons">star</i>
+            <i class="material-icons">star</i>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 2: Arts District Craft & Kitchen -->
+    <div id="web2" class="modal">
+      <div class="modal-content center">
+        <h4>
+          Arts District Craft & Kitchen<i
+            class="material-icons black-text right modal-action modal-close"
+            >close</i
+          >
+        </h4>
+        <img
+          src="img/portfolio/web-design/adcraftandkitchen-1crop.jpg"
+          alt=""
+          class="responsive-img"
+        /><br />
+        <p class="flow-text">
+          I really enjoyed creating this beatiful web presentation. Arts
+          District Craft and Kitchen is a culmination of giving our best to the
+          community through our food, service, and atmosphere. Tucked inside one
+          of the premier breweries in Nevada, this collaboration project allows
+          us another opportunity to create a memorable setting for you to catch
+          up with friends and make new ones over tasty bites and a refreshing
+          beer.
+        </p>
+        <p>
+          Source:
+          <a href="https://adcraftandkitchen.com/">adcraftandkitchen.com</a>
+        </p>
+        <div class="row center">
+          <div class="col s12 l4">
+            <img
+              class="materialboxed responsive-img modal-img"
+              src="img/portfolio/web-design/adcraftandkitchen-1.jpg"
+            />
+          </div>
+          <div class="col s12 l4">
+            <img
+              class="materialboxed responsive-img modal-img"
+              src="img/portfolio/web-design/adcraftandkitchen-2.jpg"
+            />
+          </div>
+          <div class="col s12 l4">
+            <img
+              class="materialboxed responsive-img modal-img"
+              src="img/portfolio/web-design/adcraftandkitchen-3.jpg"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="modal-footer">
+          <p>
+            <i class="material-icons">star</i>
+            <i class="material-icons">star</i>
+            <i class="material-icons">star</i>
+            <i class="material-icons">star</i>
+            <i class="material-icons">star</i>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 3: QuadAngles - Creative Digital Studio -->
+    <div id="web3" class="modal">
+      <div class="modal-content center">
+        <h4>
+          QuadAngles - Creative Digital Studio<i
+            class="material-icons black-text right modal-action modal-close"
+            >close</i
+          >
+        </h4>
+        <img
+          src="img/portfolio/web-design/quadangles-1crop.jpg"
+          alt=""
+          class="responsive-img"
+        /><br />
+        <p class="flow-text">
+          Quad Angles make products with strategy, technology, and creativity to
+          become your brand visible and active. This project is a result of a
+          beautiful collaboration.
+        </p>
+        <p>Source: <a href="https://quaddesigns.in/">quaddesigns.in</a></p>
+        <div class="row center">
+          <div class="col s12 l4">
+            <img
+              class="materialboxed responsive-img modal-img"
+              src="img/portfolio/web-design/quadangles-1.jpg"
+            />
+          </div>
+          <div class="col s12 l4">
+            <img
+              class="materialboxed responsive-img modal-img"
+              src="img/portfolio/web-design/quadangles-2.jpg"
+            />
+          </div>
+          <div class="col s12 l4">
+            <img
+              class="materialboxed responsive-img modal-img"
+              src="img/portfolio/web-design/quadangles-3.jpg"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="modal-footer">
+          <p>
+            <i class="material-icons">star</i>
+            <i class="material-icons">star</i>
+            <i class="material-icons">star</i>
+            <i class="material-icons">star</i>
+            <i class="material-icons">star</i>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">About Me</h5>
+            <p class="grey-text text-lighten-4">
+              Hi, my name is Tanja, and I am 26 year old experienced designer
+              and I specialize in Graphic, UI/UX and Web design.
+            </p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
+            <ul>
+              <li>
+                <a class="grey-text text-lighten-3" href="#top">Top</a>
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="index.html#about-me"
+                  >About Me</a
+                >
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container center-align">
+          © 2020 Tanja Vladisavljević
+          <a class="grey-text text-lighten-4 right" href="#top"
+            ><i class="material-icons small scroll-icon">
+              arrow_upward
+            </i></a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <!--Import jQuery before materialize.js-->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+    ></script>
+    <!--Import noUiSlider-->
+    <script
+      type="text/javascript"
+      src="extras/noUiSlider/nouislider.min.js"
+    ></script>
+    <!--Import materiazlize.min.js-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <!--Import main JavaScript-->
+    <script type="text/javascript" src="js/portfolio.js"></script>
+  </body>
+</html>

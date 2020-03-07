@@ -1,0 +1,233 @@
+@import "./materialize";
+
+// Varijable //
+$header-bg: url(../img/bg-header.png);
+$header-height: 600px;
+$ui-color: #ab47bc;
+$web-color-: mix($secondary-color, $primary-color);
+$web-color: scale-color($web-color-, $lightness: +5%);
+
+// Funkcije //
+@function set-text-color($color) {
+  @if (lightness($color) > 60) {
+    @return scale-color($color, $lightness: -60%);
+  } @else {
+    @return #ffffff;
+  }
+}
+// Html, body, sections, header
+// ==========================================================================
+// Html //
+html {
+  scroll-behavior: smooth;
+}
+// Body //
+body {
+  padding-top: 0;
+  padding-bottom: 0;
+  background: $primary-color;
+  .section-gd {
+    background: $primary-color;
+    color: set-text-color($primary-color);
+  }
+  .section-ui {
+    background: $ui-color;
+    color: set-text-color($ui-color);
+  }
+  .section-web {
+    background: $web-color;
+    color: set-text-color($web-color);
+  }
+}
+// Sections //
+.section-about {
+  padding: 0;
+}
+.section-follow {
+  background: $primary-color;
+}
+// Header //
+.main-header {
+  background: $header-bg;
+  background-size: cover;
+  color: #fff;
+  height: $header-height;
+
+  h1 {
+    margin: 0;
+    padding-top: 180px;
+  }
+
+  .brand-logo {
+    padding-left: 10px;
+  }
+
+  .collapsible-header {
+    padding: 0 32px;
+  }
+
+  .collapsible-body {
+    padding-left: 57px;
+  }
+}
+
+// Typography //
+// ==========================================================================
+h3 .flow-text {
+  margin: 0px;
+}
+
+// Icon Boxes //
+// ==========================================================================
+.section-icons .card-title {
+  font-weight: 400;
+  font-size: xx-large;
+}
+
+.card-content {
+  height: 100%;
+}
+
+.card.hoverable {
+  height: 100%;
+  cursor: pointer;
+}
+.my-row {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+.my-col {
+  height: auto;
+}
+
+// Footer //
+// ==========================================================================
+
+.page-footer {
+  background: $primary-color-light;
+
+  .footer-copyright {
+    background: $primary-color-dark;
+  }
+}
+
+// About Me //
+// ==========================================================================
+.btn-extended {
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  margin-top: 20px;
+}
+#popout {
+  margin-top: 30px;
+  color: rgb(73, 73, 73);
+}
+
+// Tabs & Modals //
+// ==========================================================================
+
+.tabs .tab a.active {
+  color: #fff;
+  font-weight: 600;
+}
+.star-graphic {
+  color: $primary-color;
+}
+.star-ui {
+  color: $ui-color;
+}
+.star-web {
+  color: $secondary-color;
+}
+
+.img-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+}
+
+.modal .modal-footer {
+  text-align: center !important;
+  padding-bottom: 100px;
+}
+
+// Carousel //
+// ==========================================================================
+.carousel.carousel-slider {
+  height: 400px !important;
+
+  .carousel-text {
+    padding-top: 30px;
+    font-weight: 500;
+  }
+
+  .test-img {
+    max-width: 120px;
+    max-height: 120px;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+
+  .icon-wrapper {
+    margin-top: 15px;
+  }
+
+  #one {
+    background-color: #1e88e5;
+    p {
+      color: set-text-color(#1e88e5) !important;
+    }
+  }
+  #two {
+    background-color: #64b5f6;
+    p {
+      color: set-text-color(#64b5f6) !important;
+    }
+  }
+  #three {
+    background-color: #7e57c2;
+    p {
+      color: set-text-color(#7e57c2) !important;
+    }
+  }
+  #four {
+    background-color: #ce93d8;
+    p {
+      color: set-text-color(#ce93d8) !important;
+    }
+  }
+}
+// Media Query //
+// ==========================================================================
+@media only screen and (max-width: 600px) {
+  .modal-img {
+    margin: 0 auto;
+    width: 200px;
+  }
+  .my-row {
+    display: block;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .modal-img {
+    width: 350px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  .modal-img {
+    width: 250px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  .modal-img {
+    width: 300px;
+    margin: 0 auto;
+  }
+}
