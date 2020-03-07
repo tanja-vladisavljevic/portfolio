@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Import Google Icon Font -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Import materialize.css -->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="css/materialize.css"
+      media="screen,projection"
+    />
+    <!-- Import nouislider.css -->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="extras/noUiSlider/nouislider.css"
+    />
+
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+
+     <!-- Import Font Awesome! -->
+     <script
+     src="https://kit.fontawesome.com/dc03b3b399.js"
+     crossorigin="anonymous"
+   ></script>
+
+    <!-- Optimizacija za mobilne uredjaje -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+  </head>
+
+  <body id="top" class=" scrollspy">
+    <!-- Header -->
+    <header class="main-header">
+      <nav class="transparent z-depth-0">
+        <div class="nav-wrapper">
+          <a href="#" data-target="mobile-nav" class="sidenav-trigger">
+            <i class="material-icons">menu</i>
+          </a>
+          <a href="index.html" class="brand-logo hide-on-med-and-down">
+            <h5>Tanja Vladisavljević</h5>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li class="active">
+              <a href="#about-me">About Me</a>
+            </li>
+            <li>
+              <a class="dropdown-trigger" href="#!" data-target="portfolio"
+                >Portfolio<i class="material-icons right">arrow_drop_down</i></a
+              >
+            </li>
+            <ul id="portfolio" class="dropdown-content">
+              <li><a href="portfolio.html#graphic-design">Graphic Design</a></li>
+              <li><a href="portfolio.html#ui-ux-design">UI/UX Design</a></li>
+              <li><a href="portfolio.html#web-design">Web Design</a></li>
+            </ul>
+            <li>
+              <!-- Hire Me Modal Trigger -->
+              <a
+                class="waves-effect waves-light btn blue modal-trigger"
+                href="#hire-me"
+                >Hire Me</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Sidenav za mobilne uredjaje -->
+      <ul id="mobile-nav" class="sidenav">
+        <li>
+          <a class="subheader center-align">Tanja Vladisavljević</a>
+        </li>
+        <li><div class="divider"></div></li>
+        <li class="left-align">
+          <a href="index.html"><i class="material-icons">home</i>Home</a>
+        </li>
+        <li class="left-align">
+          <a href="#about-me"
+            ><i class="material-icons">camera_front</i>About Me</a
+          >
+        </li>
+        <li class="left-align">
+          <!-- Collapsible komponenta za nav meni -->
+          <ul class="collapsible collapsible-accordion ">
+            <li>
+              <a class="collapsible-header"
+                ><i class="material-icons">developer_board</i>Portfolio</a
+              >
+              <div class="collapsible-body">
+                <ul>
+                  <li><a href="portfolio.html#graphic-design">Graphic Design</a></li>
+                  <li><a href="portfolio.html#ui-ux-design">UI/UX Design</a></li>
+                  <li><a href="portfolio.html#web-design">Web Design</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <!-- Hire Me Modal Trigger za nav meni -->
+        <li>
+          <a
+            class="waves-effect waves-light hire-me btn blue modal-trigger"
+            href="#hire-me"
+            >Hire Me</a
+          >
+        </li>
+      </ul>
+
+      <!-- Header naslov -->
+      <h1 class="center">I do <span id="design">Graphic</span> Design</h1>
+    </header>
+
+    <!-- Sekcija: Kartice Icon Boxes -->
+    <section class="section section-icons grey lighten-4 center">
+      <div class="container">
+        <div class="row my-row">
+          <div class="col s12 m4 my-col">
+            <div class="card hoverable">
+              <div class="card-content activator">
+                <i
+                  class="material-icons activator large deep-purple-text"
+                  >web</i
+                >
+                <h4>
+                  <span class="card-title activator deep-purple-text">Graphic Design</span>
+                </h4>
+                <p>
+                  Explore the art of creating visual content through interactive designs to communicate desired messages to your target users.  
+                </p>
+              </div>
+
+              <div class="card-reveal">
+                <span class="card-title deep-purple-text"
+                  >Graphic Design<i class="material-icons grey-text text-darken-4 right">close</i></span
+                >
+                <p>
+                  Explore the art of creating visual content through interactive designs to communicate desired messages to your target users.
+                  Let me help you create beautiful visual content that's going to make you and your users happy. 
+                </p>
+                <p><a href="portfolio.html#graphic-design">See my work</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m4 my-col">
+            <div class="card hoverable">
+              <div class="card-content activator">
+                <i
+                  class="material-icons activator large purple-text text-lighten-1"
+                  >dvr</i
+                >
+                <h4>
+                  <span class="card-title activator purple-text text-lighten-1">UI/UX Design</span>
+                </h4>
+                <p>
+                  Create or improve the look and feel of your website or app and improve the overall experience of the users when they interact with your website or app.
+                </p>
+              </div>
+
+              <div class="card-reveal">
+                <span class="card-title purple-text text-lighten-1"
+                  >UI/UX Design<i class="material-icons grey-text text-darken-4 right">close</i></span
+                >
+                <p>
+                  Create or improve the look and feel of your website or app and improve the overall experience of the users when they interact with your website or app. Let me help you create a beautiful experience for your users.
+                </p>
+                </p>
+                <p><a href="portfolio.html#ui-ux-design">See my work</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m4 my-col">
+            <div class="card hoverable">
+              <div class="card-content activator">
+                <i
+                  class="material-icons activator large blue-text text-lighten-1"
+                  >code</i
+                >
+                <h4>
+                  <span class="card-title activator blue-text text-lighten-1">Web Design</span>
+                </h4>
+                <p>
+                  A good web design is easy to use, aesthetically pleasing, and suits the user group and brand of the website. 
+                </p>
+              </div>
+
+              <div class="card-reveal">
+                <span class="card-title blue-text text-lighten-1"
+                  >Web Design<i class="material-icons grey-text text-darken-4 right">close</i></span
+                >
+                <p>
+                  A good web design is easy to use, aesthetically pleasing, and suits the user group and brand of the website.
+                  Let me help you create a beautiful design for your website or app with responsive and adaptive design.
+                </p>
+                <p><a href="portfolio.html#web-design">See my work</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sekcija: About me -->
+    <section class="section section-about">
+      <div class="parallax-container">
+        <div class="parallax"><img src="img/parallax.jpg"></div>
+      </div>
+      <div class="section section-about-me grey lighten-4">
+        <div class="row container">
+
+          <div class="col s12 m6">
+            <div class="section scrollspy" id="about-me">
+              <button id="popout-trigger" class="center hoverable tooltipped btn btn-extended deep-purple waves-effect waves-deep-purple"
+              data-position="right"
+              data-tooltip="Click Me">About Me</button>
+            </div> 
+           </div>
+        
+          <div class="col s12 m6">
+            <ul id="popout" class="center collapsible popout scale-transition scale-out">
+              <li>
+                <div class="collapsible-header"><i class="material-icons">folder_shared</i>My backstory</div>
+                <div class="collapsible-body"><span>Hi, my name is Tanja, and I am 26 year old experienced designer and I specialize in Graphic, UI/UX and Web design.</span></div>
+              </li>
+              <li>
+                <div class="collapsible-header"><i class="material-icons">school</i>Education</div>
+                <div class="collapsible-body center"><span><img src="img/fon.png" alt="fon" class="responsive-img" id="fon"><br>
+                  Faculty of Organizational Sciences <br>Course: Information systems and technologies</span></div>
+              </li>
+              <li>
+                <div class="collapsible-header"><i class="material-icons">view_comfy</i>What I can offer</div>
+                <div class="collapsible-body"><span>I can provide you with beautiful design solutions for your specific needs. You can see my best work <a href="portfolio.html">here</a>.</span></div>
+              </li>
+              <li>
+                <div class="collapsible-header"><i class="material-icons">chrome_reader_mode</i>Download my CV</div>
+                <div class="collapsible-body center">
+                  <span>You can download my full CV here: <br><br>
+                    <a 
+                    href="cv/Tanja-Vladisavljević-CV.pdf"
+                    class="waves-effect waves-light deep-purple btn-large"
+                    id="cv">
+                    <i class="material-icons medium white-purple-text">cloud_download</i>
+                  </a>
+                  </span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+      <div class="parallax-container">
+        <div class="parallax"><img src="img/parallax.jpg"></div>
+      </div>
+    </section>
+
+    <!-- Sekcija: Social Media -->
+    <section class="section section-follow white-text center">
+      <div class="container">
+        <div class="row">
+          <div class="col s12">
+            <h4>Follow Me on Social Media</h4>
+            <p>Follow me on social media for my latest ideas</p>
+            <a href="https://facebook.com" class="white-text">
+              <i class="fab fa-facebook fa-4x"></i>
+            </a>
+            <a href="https://twitter.com" class="white-text">
+              <i class="fab fa-twitter fa-4x"></i>
+            </a>
+            <a href="https://linkedin.com" class="white-text">
+              <i class="fab fa-linkedin fa-4x"></i>
+            </a>
+            <a href="https://aboutme.google.com/" class="white-text">
+              <i class="fab fa-google-plus fa-4x"></i>
+            </a>
+            <a href="https://pinterest.com" class="white-text">
+              <i class="fab fa-pinterest fa-4x"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section> 
+
+    <!-- Hire Me Modal Content-->
+    <div id="hire-me" class="modal">
+      <div class="modal-content">
+        <h3 class="center-align">
+          Hire
+          <button
+            onclick="window.location.href = '#about-me'"
+            ;
+            class="btn-large tooltipped blue"
+            data-position="right"
+            data-tooltip="About Me"
+          >
+            <h3 class="flow-text">Me</h3>
+          </button>
+        </h3>
+        <div class="divider"></div>
+        <br />
+        <!-- Forma pocetak -->
+        <form action="#">
+          <h4 class="grey-text flow-text">Your Contact</h4>
+          <br />
+          <!-- Kontakt -->
+          <div class="input-field">
+            <i class="material-icons blue-text prefix">account_circle</i>
+            <input id="name" type="text" class="validate" required />
+            <label for="name">Name*</label>
+            <div class="input-field">
+              <i class="material-icons blue-text prefix">email</i>
+              <input id="email" type="email" class="validate" required />
+              <label for="email">Email*</label>
+            </div>
+          </div>
+          <br />
+          <!-- Detalji -->
+          <h4 class="grey-text flow-text">Project Details</h4>
+          <br />
+          <!-- Pitanje 1 -->
+          <h6 class="flow-text">What can I help you with?</h6>
+          <p>
+            <label>
+              <input type="checkbox" class="filled-in" />
+              <span>Graphic Design</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox" class="filled-in" />
+              <span>UI/UX Design</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox" class="filled-in" />
+              <span>Web Design</span>
+            </label>
+          </p>
+          <br />
+          <!-- Pitanje 2 -->
+          <h6 class="flow-text">
+            Is this a new project or a redesign for an existing site / brand?
+          </h6>
+          <p>
+            <label>
+              <input class="with-gap" name="new" type="radio" />
+              <span>New Project</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input class="with-gap" name="redesign" type="radio" />
+              <span>Redesign</span>
+            </label>
+          </p>
+          <br />
+          <!-- Pitanje 3 -->
+          <h6 class="flow-text">
+            <span class="blue-text"><b>Timeline.</b></span> When do you need
+            this completed by?
+          </h6>
+          <input type="text" class="datepicker" />
+          <!-- Pitanje 4 -->
+          <h6 class="flow-text">
+            <span class="blue-text"><b>Budget.</b></span> How much are you
+            planning to invest in the project? (EUR)
+          </h6>
+          <br /><br />
+          <div id="budget-slider"></div>
+          <br />
+          <!-- Pitanje 5 -->
+          <h6 class="flow-text">
+            Why is the site / redesign / project needed? Who is the audience?
+          </h6>
+          <div class="input-field">
+            <textarea
+              id="textarea1"
+              class="materialize-textarea"
+              data-length="120"
+            ></textarea>
+            <label for="textarea1">Your answer</label>
+          </div>
+          <!-- Pitanje 6 -->
+          <h6 class="flow-text">
+            What are the primary objectives and goals (long term and short term)
+            for the project?
+          </h6>
+          <div class="input-field">
+            <textarea
+              id="textarea2"
+              class="materialize-textarea"
+              data-length="120"
+            ></textarea>
+            <label for="textarea2">Your answer</label>
+          </div>
+          <!-- Pitanje 7 -->
+          <h6 class="flow-text">
+            Please provide any additional details for the project.
+          </h6>
+          <div class="input-field">
+            <textarea
+              id="textarea3"
+              class="materialize-textarea"
+              data-length="120"
+            ></textarea>
+            <label for="textarea3">Your answer</label>
+          </div>
+        </form>
+        <!-- Forma kraj -->
+      </div>
+      <div class="container">
+        <div class="modal-footer">
+          <a
+            href="#!"
+            class="modal-action modal-close waves-effect waves-light waves-blue btn-large "
+            ><span class="flow-text">SUBMIT</span></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Sekcija: Testimonials -->
+    <section id="testimonials" class="section section-testimonials grey lighten-4  center scrollspy">
+      <div class="container">
+        <h2 class="grey-text" >What Clients Say About My Work</h2>
+        <div class="carousel carousel-slider center">
+          <div id="one" class="carousel-item">
+            <p class="flow-text carousel-text">"It fits our needs perfectly".</p>
+            <p>
+              <em>- Mike Roussell from Neuro Coffee</em>
+            </p>
+            <img class="test-img" src="/img/test/test.jpg" alt="man"></img>
+            <div class="icon-wrapper">
+              <a href="#!"><i class="fab fa-linkedin fa-2x white-text"></i></a>
+              <a href="#!" class="white-text"><i class="fab fa-google-plus fa-2x"></i>
+            </div>
+          </div>
+          <div id="two" class="carousel-item">
+            <p class="flow-text carousel-text">"Fantastic, I'm totally blown away by Tanja's Designs and work ethic!"
+            </p>
+            <p>
+              <em>- Jeff Lewis CEO and Co-founder of Guidebook</em>
+            </p>
+            <img class="test-img" src="/img/test/test-2.jpg" alt="man"></img>
+            <div class="icon-wrapper">
+              <a href="#!"><i class="fab fa-linkedin fa-2x white-text"></i></a>
+              <a href="#!" class="white-text"><i class="fab fa-google-plus fa-2x"></i>
+            </div>
+          </div>
+          <div id="three" class="carousel-item">
+            <p class="flow-text carousel-text">Needless to say we are extremely satisfied with the results. I would like to personally thank you for your   outstanding solutions.</p>
+            <p>
+              <em>- Christine M. from Arts District Craft & Kitchen</em>
+            </p>
+            <img class="test-img" src="/img/test/test-3.jpg" alt="woman"></img>
+            <div class="icon-wrapper">
+              <a href="#!"><i class="fab fa-linkedin fa-2x white-text"></i></a>
+              <a href="#!" class="white-text"><i class="fab fa-google-plus fa-2x"></i>
+            </div>
+          </div>
+          <div id="four" class="carousel-item">
+            <p class="flow-text carousel-text">You've made our special day joyful and unforgettable! </p>
+            <p>
+              <em>- Leslie&Brian</em>
+            </p>
+            <img class="test-img" src="/img/test/test-4.png" alt="couple"></img>
+            <div class="icon-wrapper">
+              <a href="#!"><i class="fab fa-linkedin fa-2x white-text"></i></a>
+              <a href="#!" class="white-text"><i class="fab fa-google-plus fa-2x"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">About Me</h5>
+            <p class="grey-text text-lighten-4">
+              Hi, my name is Tanja, and I am 26 year old experienced designer and I specialize in Graphic, UI/UX and Web design.
+            </p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
+            <ul>
+              <li>
+                <a class="grey-text text-lighten-3" href="#top"
+                  >Top</a
+                >
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="#about-me">About Me</a>
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container center">
+          © 2020 Tanja Vladisavljević
+          <a class="grey-text text-lighten-4 right" href="#top"><i class="material-icons small scroll-icon">
+            arrow_upward
+          </i></a>
+        </div>
+      </div>
+    </footer>
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!--Import noUiSlider-->
+    <script type="text/javascript" src="extras/noUiSlider/nouislider.min.js"></script>
+    <!--Import materiazlize.min.js-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <!--Import main JavaScript-->
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
