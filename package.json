@@ -1,7 +1,6 @@
 {
   "name": "porftolio",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "deploy": "gh-pages -d dist"
@@ -12,5 +11,14 @@
   "homepage": "https://tanja-vladisavljevic.github.io/portfolio",
   "dependencies": {
     "gh-pages": "^2.2.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tanja-vladisavljevic/portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tanja-vladisavljevic/portfolio/issues"
+  },
+  "description": ""
 }
